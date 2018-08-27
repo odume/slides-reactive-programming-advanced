@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Reactive programming - Advanced</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sopra-banking.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="header">
+        <img class="logo" src="lib/images/banking-logo.png" alt="Sopra banking software"/>
+        <span class="title">Reactive programming - Advanced</span>
+        <span class="author">Olivier Ducarme</span>
+    </div>
+    <div class="slides">
+        <section data-markdown># Main title</section>
+        <section>
+            <section data-markdown>## Subtitle</section>
+            <!--<section data-markdown="slides/dir/example.md"></section>-->
+        </section>
+    </div>
+
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/external-html.js"></script>
+<script>
+    Reveal.initialize({
+        width: 1200,
+        history: true,
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+
+    Reveal.configure({
+        slideNumber: true
+    });
+</script>
+</body>
+</html>
