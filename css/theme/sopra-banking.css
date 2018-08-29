@@ -209,6 +209,7 @@ body {
 .reveal code {
     font-family: monospace;
     text-transform: none;
+    font-size: 75%;
 }
 
 .reveal pre code {
@@ -217,6 +218,7 @@ body {
     overflow: auto;
     max-height: 400px;
     word-wrap: normal;
+    font-size: 100%;
 }
 
 .reveal table {
